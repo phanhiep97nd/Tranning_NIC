@@ -6,11 +6,12 @@ Module Program
         Dim isLoopMainMenu As Boolean
         Dim isLoopSubMenu As Boolean
         Do
-            isLoopMainMenu = False
+            isLoopMainMenu = True
             Console.WriteLine("---Traning VB.Net-----")
             Console.WriteLine("Mời bạn chọn: ")
             Console.WriteLine("1.VB.Net Basic")
             Console.WriteLine("2.Lập trình hướng đối tượng và tính đa hình")
+            Console.WriteLine("3.Exception trong VB.Net")
             Console.WriteLine("7.Thoát chương trình!!")
             Dim userInputMainMenu As String
             userInputMainMenu = Console.ReadLine()
@@ -58,11 +59,19 @@ Module Program
                 Case "2"
                     Console.WriteLine("----Lập trình hướng đối tượng và tính đa hình----")
                     Dim oop = New OOP()
+                Case "3"
+                    Console.WriteLine("-----Exception trong VB.net---")
+                    Try
+                        Dim arr(3) As String
+                        arr(4) = "a"
+                        Console.WriteLine(arr(4))
+                    Catch ex As Exception
+                        Throw (New MyException())
+                    End Try
                 Case "7"
                     Environment.Exit(0)
                 Case Else
                     Console.WriteLine("Bạn chưa chọn đúng giá trị menu! Mời chọn lại!")
-                    isLoopMainMenu = True
             End Select
         Loop While isLoopMainMenu
     End Sub
