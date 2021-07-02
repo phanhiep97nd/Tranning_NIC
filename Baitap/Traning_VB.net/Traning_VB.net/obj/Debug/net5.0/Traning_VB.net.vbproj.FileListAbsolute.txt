@@ -1,0 +1,16 @@
+D:\prji_nic_vbnet\70_member\HiepPV\Baitap\Traning_VB.net\Traning_VB.net\bin\Debug\net5.0\Traning_VB.net.exe
+D:\prji_nic_vbnet\70_member\HiepPV\Baitap\Traning_VB.net\Traning_VB.net\bin\Debug\net5.0\Traning_VB.net.deps.json
+D:\prji_nic_vbnet\70_member\HiepPV\Baitap\Traning_VB.net\Traning_VB.net\bin\Debug\net5.0\Traning_VB.net.runtimeconfig.json
+D:\prji_nic_vbnet\70_member\HiepPV\Baitap\Traning_VB.net\Traning_VB.net\bin\Debug\net5.0\Traning_VB.net.runtimeconfig.dev.json
+D:\prji_nic_vbnet\70_member\HiepPV\Baitap\Traning_VB.net\Traning_VB.net\bin\Debug\net5.0\Traning_VB.net.dll
+D:\prji_nic_vbnet\70_member\HiepPV\Baitap\Traning_VB.net\Traning_VB.net\bin\Debug\net5.0\ref\Traning_VB.net.dll
+D:\prji_nic_vbnet\70_member\HiepPV\Baitap\Traning_VB.net\Traning_VB.net\bin\Debug\net5.0\Traning_VB.net.pdb
+D:\prji_nic_vbnet\70_member\HiepPV\Baitap\Traning_VB.net\Traning_VB.net\obj\Debug\net5.0\Traning_VB.net.vbproj.AssemblyReference.cache
+D:\prji_nic_vbnet\70_member\HiepPV\Baitap\Traning_VB.net\Traning_VB.net\obj\Debug\net5.0\Traning_VB.net.GeneratedMSBuildEditorConfig.editorconfig
+D:\prji_nic_vbnet\70_member\HiepPV\Baitap\Traning_VB.net\Traning_VB.net\obj\Debug\net5.0\Traning_VB.net.AssemblyInfoInputs.cache
+D:\prji_nic_vbnet\70_member\HiepPV\Baitap\Traning_VB.net\Traning_VB.net\obj\Debug\net5.0\Traning_VB.net.AssemblyInfo.vb
+D:\prji_nic_vbnet\70_member\HiepPV\Baitap\Traning_VB.net\Traning_VB.net\obj\Debug\net5.0\Traning_VB.net.vbproj.CoreCompileInputs.cache
+D:\prji_nic_vbnet\70_member\HiepPV\Baitap\Traning_VB.net\Traning_VB.net\obj\Debug\net5.0\Traning_VB.net.dll
+D:\prji_nic_vbnet\70_member\HiepPV\Baitap\Traning_VB.net\Traning_VB.net\obj\Debug\net5.0\ref\Traning_VB.net.dll
+D:\prji_nic_vbnet\70_member\HiepPV\Baitap\Traning_VB.net\Traning_VB.net\obj\Debug\net5.0\Traning_VB.net.pdb
+D:\prji_nic_vbnet\70_member\HiepPV\Baitap\Traning_VB.net\Traning_VB.net\obj\Debug\net5.0\Traning_VB.net.genruntimeconfig.cache

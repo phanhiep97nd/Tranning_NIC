@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "Traning_VB.net/1.0.0": {
+        "runtime": {
+          "Traning_VB.net.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Traning_VB.net/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
