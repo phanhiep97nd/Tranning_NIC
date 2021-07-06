@@ -1,7 +1,18 @@
+''-----------------------------------------------------------------------
+' <copyright file="Program.vb" company="Luvina">
+' Copyright (c) Luvina Corporation. All rights reserved.
+' </copyright>
+'---------------------------------------------------------------------
 Imports System
 Imports System.Net.Mime.MediaTypeNames
 
 Module Program
+
+    '''' ------------------------------------
+    ''' <summary>
+    ''' Hàm thực hiện việc chạy chương trình
+    ''' </summary>
+    ''' -----------------------------------
     Sub Main(args As String())
         Dim isLoopMainMenu As Boolean
         Dim isLoopSubMenu As Boolean
@@ -140,7 +151,7 @@ Module Program
                         Console.WriteLine("1.Bài 1")
                         Console.WriteLine("2.Bài 2")
                         Console.WriteLine("3.Bài 3")
-                        Console.WriteLine("5.Thoát về menu chính")
+                        Console.WriteLine("4.Thoát về menu chính")
                         Console.WriteLine("Mời bạn chọn: ")
                         Dim choose As String
                         choose = Console.ReadLine()
@@ -156,11 +167,22 @@ Module Program
                                 ioBai1.ReadFile("D:\prji_nic_vbnet\70_member\HiepPV\File_Test_Read_Write", "InputOutput_Bai1.txt")
                             Case "2"
                                 Console.WriteLine("---Bài 2")
+                                Console.WriteLine("Viết chương trình nhập vào tên một file nguồn và tên thư mục chứa file đích, hãy thực hiện")
+                                Console.WriteLine("a.	Kiểm tra file nguồn có tồn tại không, nếu không tồn tại thoát khỏi chương trình.")
+                                Console.WriteLine("b.	Nếu file nguồn đã tồn tại, kiểm tra thư mục đích đã tồn tại hay không, nếu chưa tồn tại, tạo mới thư mục này và copy file nguồn vào thư mục này.")
                                 Console.WriteLine("*********")
+                                Dim io2 = New InputOutputBai2()
+                                io2.CopyFile()
                             Case "3"
                                 Console.WriteLine("---Bài 3")
+                                Console.WriteLine("Cho 1 đối tượng user bao gồm các thông tin sau: Username, age, address, score. Lập trình thực hiện:")
+                                Console.WriteLine("a.	Hãy nhập một danh sách các user từ bàn phím và lưu danh sách user vào file.")
+                                Console.WriteLine("b.	Đọc nội dung file vừa tạo, sắp xếp danh sách theo tên user và hiện thị ra màn hình.")
+                                Console.WriteLine("c.	Tính tổng score của tất cả các user")
                                 Console.WriteLine("*********")
-                            Case "5"
+                                Dim io3 = New InputOutputBai3()
+                                io3.ShowMenu()
+                            Case "4"
                                 isLoopSubMenu = False
                                 isLoopMainMenu = True
                             Case Else

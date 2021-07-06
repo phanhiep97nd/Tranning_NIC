@@ -1,6 +1,29 @@
-﻿Public Class BasicBai3
+﻿''-----------------------------------------------------------------------
+' <copyright file="BasicBai3.vb" company="Luvina">
+' Copyright (c) Luvina Corporation. All rights reserved.
+' </copyright>
+'---------------------------------------------------------------------
+
+'''' ------------------------------------
+''' Project  : Traning_VB.net
+''' Class  : BasicBai3
+''' ------------------------------------ 
+''' <summary>
+''' BasicBai3
+''' </summary>
+''' <history>
+'''  [HiepPV] 06/07/2021 Created
+''' </history>
+''' ------------------------------------
+Public Class BasicBai3
     Private number1 As Integer
     Private number2 As Integer
+
+    '''' ------------------------------------
+    ''' <summary>
+    ''' Lấy các giá trị cần thiết từ bán phím
+    ''' </summary>
+    ''' -----------------------------------
     Private Sub GetValue()
         Console.WriteLine("Mời bạn nhập số thứ nhất:")
         number1 = Console.ReadLine()
@@ -8,6 +31,11 @@
         number2 = Console.ReadLine()
     End Sub
 
+    '''' ------------------------------------
+    ''' <summary>
+    ''' Thực hiện tính toán
+    ''' </summary>
+    ''' -----------------------------------
     Public Sub Calculate()
         GetValue()
         Dim isLoop As Boolean

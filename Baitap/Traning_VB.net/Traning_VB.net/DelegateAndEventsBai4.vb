@@ -1,6 +1,20 @@
-﻿Public Class DelegateAndEventsBai4
+﻿''-----------------------------------------------------------------------
+' <copyright file="Example.vb" company="Luvina">
+' Copyright (c) Luvina Corporation. All rights reserved.
+' </copyright>
+'---------------------------------------------------------------------
 
-End Class
+'''' ------------------------------------
+''' Project  : Traning_VB.net
+''' Class  : MyAnimals
+''' ------------------------------------ 
+''' <summary>
+''' MyAnimals
+''' </summary>
+''' <history>
+'''  [HiepPV] 06/07/2021 Created
+''' </history>
+''' ------------------------------------
 Public Class MyAnimals
     Public Delegate Sub CheckCallHandler()
     Public Event CheckCall As CheckCallHandler
@@ -15,10 +29,21 @@ Public Class MyAnimals
             BodyTemp = value
         End Set
     End Property
+
+    '''' ------------------------------------
+    ''' <summary>
+    ''' Hiển thị message
+    ''' </summary>
+    ''' -----------------------------------
     Private Sub ShowMessage()
         Console.WriteLine("Property của BodyTemp đã được gọi!!!!")
     End Sub
 
+    '''' ------------------------------------
+    ''' <summary>
+    ''' Thực hiện chạy logic chính
+    ''' </summary>
+    ''' -----------------------------------
     Public Sub RunTest()
         AddHandler CheckCall, AddressOf ShowMessage
         Console.WriteLine("Nhập giá trị cho BodyTemp(số):")

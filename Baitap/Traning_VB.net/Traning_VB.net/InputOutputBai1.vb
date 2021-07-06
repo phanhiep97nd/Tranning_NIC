@@ -1,7 +1,31 @@
-﻿Imports System.IO
+﻿''-----------------------------------------------------------------------
+' <copyright file="InputOutputBai1.vb" company="Luvina">
+' Copyright (c) Luvina Corporation. All rights reserved.
+' </copyright>
+'---------------------------------------------------------------------
+Imports System.IO
 Imports System.Text.RegularExpressions
 
+'''' ------------------------------------
+''' Project  : Traning_VB.net
+''' Class  : InputOutputBai1
+''' ------------------------------------ 
+''' <summary>
+''' InputOutputBai1
+''' </summary>
+''' <history>
+'''  [HiepPV] 06/07/2021 Created
+''' </history>
+''' ------------------------------------
 Public Class InputOutputBai1
+
+    '''' ------------------------------------
+    ''' <summary>
+    ''' Thực hiện đọc file và tính toán
+    ''' </summary>
+    ''' <param name="pathSource">Đường dẫn</param>
+    ''' <param name="fileName">tên file</param>
+    ''' -----------------------------------
     Public Sub ReadFile(ByVal pathSource As String, ByVal fileName As String)
         Dim path As String = pathSource & "\" & fileName
         If FileIO.FileSystem.FileExists(path) Then
@@ -31,10 +55,25 @@ Public Class InputOutputBai1
             Console.WriteLine("File Không tồn tại!!!")
         End If
     End Sub
+
+    '''' ------------------------------------
+    ''' <summary>
+    ''' Tính toán số kí tự
+    ''' </summary>
+    ''' <param name="str">Chuỗi cần kiểm tra</param>
+    ''' <returns>Số kí tự trong chuỗi</returns>
+    ''' -----------------------------------
     Private Function GetNumberOfChar(ByVal str As String) As Integer
-        'Console.WriteLine(Regex.Replace(str, "\s", ""))
         Return Regex.Replace(str, "\s", "").Length
     End Function
+
+    '''' ------------------------------------
+    ''' <summary>
+    ''' Tính toán số từ
+    ''' </summary>
+    ''' <param name="str">Chuỗi cần kiểm tra</param>
+    ''' <returns>Số từ trong chuỗi</returns>
+    ''' -----------------------------------
     Private Function GetNumberOfWord(ByVal str As String) As Integer
         str = Regex.Replace(str.Trim, "\s+", " ")
         Return Regex.Split(str, "\s").Length
