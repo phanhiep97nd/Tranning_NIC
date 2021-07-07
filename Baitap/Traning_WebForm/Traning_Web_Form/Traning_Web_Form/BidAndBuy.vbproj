@@ -131,6 +131,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="Buy.aspx" />
     <Content Include="Cart.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -152,6 +153,7 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Home.aspx" />
+    <Content Include="image\image.jpg" />
     <Content Include="Login.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -194,6 +196,13 @@
     </Compile>
     <Compile Include="About.aspx.vb">
       <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Buy.aspx.designer.vb">
+      <DependentUpon>Buy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Buy.aspx.vb">
+      <DependentUpon>Buy.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Cart.aspx.designer.vb">

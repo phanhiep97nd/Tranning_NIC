@@ -68,7 +68,6 @@ D:\prji_nic_vbnet\70_member\HiepPV\Baitap\Traning_WebForm\Traning_Web_Form\Trani
 D:\prji_nic_vbnet\70_member\HiepPV\Baitap\Traning_WebForm\Traning_Web_Form\Traning_Web_Form\bin\Antlr3.Runtime.pdb
 D:\prji_nic_vbnet\70_member\HiepPV\Baitap\Traning_WebForm\Traning_Web_Form\Traning_Web_Form\bin\Microsoft.AspNet.FriendlyUrls.xml
 D:\prji_nic_vbnet\70_member\HiepPV\Baitap\Traning_WebForm\Traning_Web_Form\Traning_Web_Form\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\prji_nic_vbnet\70_member\HiepPV\Baitap\Traning_WebForm\Traning_Web_Form\Traning_Web_Form\obj\Debug\BidAndBuy.vbproj.AssemblyReference.cache
 D:\prji_nic_vbnet\70_member\HiepPV\Baitap\Traning_WebForm\Traning_Web_Form\Traning_Web_Form\obj\Debug\Traning_Web_Form.Resources.resources
 D:\prji_nic_vbnet\70_member\HiepPV\Baitap\Traning_WebForm\Traning_Web_Form\Traning_Web_Form\obj\Debug\BidAndBuy.vbproj.GenerateResource.cache
 D:\prji_nic_vbnet\70_member\HiepPV\Baitap\Traning_WebForm\Traning_Web_Form\Traning_Web_Form\obj\Debug\BidAndBuy.vbproj.CoreCompileInputs.cache
@@ -76,3 +75,4 @@ D:\prji_nic_vbnet\70_member\HiepPV\Baitap\Traning_WebForm\Traning_Web_Form\Trani
 D:\prji_nic_vbnet\70_member\HiepPV\Baitap\Traning_WebForm\Traning_Web_Form\Traning_Web_Form\obj\Debug\Traning_Web_Form.dll
 D:\prji_nic_vbnet\70_member\HiepPV\Baitap\Traning_WebForm\Traning_Web_Form\Traning_Web_Form\obj\Debug\WebForms_Basic.xml
 D:\prji_nic_vbnet\70_member\HiepPV\Baitap\Traning_WebForm\Traning_Web_Form\Traning_Web_Form\obj\Debug\Traning_Web_Form.pdb
+D:\prji_nic_vbnet\70_member\HiepPV\Baitap\Traning_WebForm\Traning_Web_Form\Traning_Web_Form\obj\Debug\BidAndBuy.vbproj.AssemblyReference.cache

@@ -37,9 +37,234 @@ Traning_Web_Form
  Returns the Asp log object.
  </summary>
 </member>
-<member name="F:Traning_Web_Form.Cart._form1">
+<member name="F:Traning_Web_Form.Buy._form1">
 <summary>
 form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Traning_Web_Form.Buy._Label1">
+<summary>
+Label1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Traning_Web_Form.Buy._ItemCode">
+<summary>
+ItemCode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Traning_Web_Form.Buy._rfvitemCode">
+<summary>
+rfvitemCode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Traning_Web_Form.Buy._Label2">
+<summary>
+Label2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Traning_Web_Form.Buy._ItemName">
+<summary>
+ItemName control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Traning_Web_Form.Buy._RequiredFieldValidator1">
+<summary>
+RequiredFieldValidator1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Traning_Web_Form.Buy._Label3">
+<summary>
+Label3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Traning_Web_Form.Buy._Quantity">
+<summary>
+Quantity control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Traning_Web_Form.Buy._RequiredFieldValidator2">
+<summary>
+RequiredFieldValidator2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Traning_Web_Form.Buy._Label4">
+<summary>
+Label4 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Traning_Web_Form.Buy._Price">
+<summary>
+Price control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Traning_Web_Form.Buy._RequiredFieldValidator3">
+<summary>
+RequiredFieldValidator3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Traning_Web_Form.Buy._Label5">
+<summary>
+Label5 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Traning_Web_Form.Buy._Calendar1">
+<summary>
+Calendar1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Traning_Web_Form.Buy._Label6">
+<summary>
+Label6 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Traning_Web_Form.Buy._Image">
+<summary>
+Image control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Traning_Web_Form.Buy._Message">
+<summary>
+Message control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Traning_Web_Form.Buy._CardNo">
+<summary>
+CardNo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Traning_Web_Form.Buy._RequiredFieldValidator4">
+<summary>
+RequiredFieldValidator4 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Traning_Web_Form.Buy._Label7">
+<summary>
+Label7 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Traning_Web_Form.Buy._ReqQuantity">
+<summary>
+ReqQuantity control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Traning_Web_Form.Buy._RequiredFieldValidator5">
+<summary>
+RequiredFieldValidator5 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Traning_Web_Form.Buy._btnConfirm">
+<summary>
+btnConfirm control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Traning_Web_Form.Buy._btnCancel">
+<summary>
+btnCancel control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Traning_Web_Form.Buy._btnBuy">
+<summary>
+btnBuy control.
 </summary>
 <remarks>
 Auto-generated field.
