@@ -1,4 +1,21 @@
-﻿Public Class User
+﻿''-----------------------------------------------------------------------
+' <copyright file="User.vb" company="Luvina">
+' Copyright (c) Luvina Corporation. All rights reserved.
+' </copyright>
+'---------------------------------------------------------------------
+
+'''' ------------------------------------
+''' Project  : DemoADO
+''' Class  : User
+''' ------------------------------------ 
+''' <summary>
+''' Lớp chứa đối tượng User
+''' </summary>
+''' <history>
+'''  [HiepPV] 08/07/2021 Created
+''' </history>
+''' ------------------------------------
+Public Class User
     Private _id As Integer
     Private _name As String
     Private _birthday As Date

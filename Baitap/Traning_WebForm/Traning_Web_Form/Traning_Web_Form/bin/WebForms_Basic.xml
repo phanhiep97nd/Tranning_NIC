@@ -37,6 +37,18 @@ Traning_Web_Form
  Returns the Asp log object.
  </summary>
 </member>
+<member name="T:Traning_Web_Form.Buy">
+ Project  : BidAndBuy
+ Class  : Buy
+ ------------------------------------ 
+ <summary>
+ Buy
+ </summary>
+ <history>
+  [HiepPV] 08/07/2021 Created
+ </history>
+ ------------------------------------
+</member>
 <member name="F:Traning_Web_Form.Buy._form1">
 <summary>
 form1 control.
@@ -270,6 +282,38 @@ btnBuy control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+</member>
+<member name="M:Traning_Web_Form.Buy.Page_Load(System.Object,System.EventArgs)">
+ <summary>
+ Được gọi khi tải trang
+ </summary>
+ <param name="sender">sender</param>
+ <param name="e">EventArgs</param>
+ -----------------------------------
+</member>
+<member name="M:Traning_Web_Form.Buy.btnBuy_Click(System.Object,System.EventArgs)">
+ <summary>
+ Hàm được gọi click button Buy
+ </summary>
+ <param name="sender">sender</param>
+ <param name="e">EventArgs</param>
+ -----------------------------------
+</member>
+<member name="M:Traning_Web_Form.Buy.btnConfirm_Click(System.Object,System.EventArgs)">
+ <summary>
+ Hàm được gọi click button Confirm
+ </summary>
+ <param name="sender">sender</param>
+ <param name="e">EventArgs</param>
+ -----------------------------------
+</member>
+<member name="M:Traning_Web_Form.Buy.btnCancel_Click(System.Object,System.EventArgs)">
+ <summary>
+ Hàm được gọi click button Cancel
+ </summary>
+ <param name="sender">sender</param>
+ <param name="e">EventArgs</param>
+ -----------------------------------
 </member>
 <member name="F:Traning_Web_Form.Login._form1">
 <summary>

@@ -37,6 +37,30 @@ DemoADO.Net
  Returns the Asp log object.
  </summary>
 </member>
+<member name="T:DemoADO.Net.User">
+ Project  : DemoADO
+ Class  : User
+ ------------------------------------ 
+ <summary>
+ Lớp chứa đối tượng User
+ </summary>
+ <history>
+  [HiepPV] 08/07/2021 Created
+ </history>
+ ------------------------------------
+</member>
+<member name="T:DemoADO.Net.ListUser">
+ Project  : DemoADO
+ Class  : ListUser
+ ------------------------------------ 
+ <summary>
+ Thực hiện các logic cho màn hình List User
+ </summary>
+ <history>
+  [HiepPV] 08/07/2021 Created
+ </history>
+ ------------------------------------
+</member>
 <member name="F:DemoADO.Net.ListUser._form1">
 <summary>
 form1 control.
@@ -54,6 +78,105 @@ GridView1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+</member>
+<member name="F:DemoADO.Net.ListUser._Label1">
+<summary>
+Label1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:DemoADO.Net.ListUser._Label2">
+<summary>
+Label2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="M:DemoADO.Net.ListUser.Page_Load(System.Object,System.EventArgs)">
+ <summary>
+ Hàm được gọi khi load trang
+ </summary>
+ <param name="sender">sender</param>
+ <param name="e">EventArgs</param>
+ -----------------------------------
+</member>
+<member name="M:DemoADO.Net.ListUser.gvbind">
+ <summary>
+ Hàm thực hiện đẩy dữ liệu cho DataGrid
+ </summary>
+ -----------------------------------
+</member>
+<member name="M:DemoADO.Net.ListUser.GridView1_RowEditing(System.Object,System.Web.UI.WebControls.GridViewEditEventArgs)">
+ <summary>
+ Hàm được gọi click button Edit của DataGrid
+ </summary>
+ <param name="sender">sender</param>
+ <param name="e">EventArgs</param>
+ -----------------------------------
+</member>
+<member name="M:DemoADO.Net.ListUser.GridView1_RowCancelingEdit(System.Object,System.Web.UI.WebControls.GridViewCancelEditEventArgs)">
+ <summary>
+ Hàm được gọi click button Cancel của DataGrid
+ </summary>
+ <param name="sender">sender</param>
+ <param name="e">EventArgs</param>
+ -----------------------------------
+</member>
+<member name="M:DemoADO.Net.ListUser.GridView1_RowDeleting(System.Object,System.Web.UI.WebControls.GridViewDeleteEventArgs)">
+ <summary>
+ Hàm được gọi click button Delete của DataGrid
+ </summary>
+ <param name="sender">sender</param>
+ <param name="e">EventArgs</param>
+ -----------------------------------
+</member>
+<member name="M:DemoADO.Net.ListUser.GridView1_RowUpdating(System.Object,System.Web.UI.WebControls.GridViewUpdateEventArgs)">
+ <summary>
+ Hàm được gọi click button Update của DataGrid
+ </summary>
+ <param name="sender">sender</param>
+ <param name="e">EventArgs</param>
+ -----------------------------------
+</member>
+<member name="T:DemoADO.Net.UserModel">
+ Project  : DemoADO
+ Class  : UserModel
+ ------------------------------------ 
+ <summary>
+ Lớp chứa các hàm liên quan đến thao tác với DB
+ </summary>
+ <history>
+  [HiepPV] 08/07/2021 Created
+ </history>
+ ------------------------------------
+</member>
+<member name="M:DemoADO.Net.UserModel.LoadData">
+ <summary>
+ Thực hiện lấy ra các user trong Db
+ </summary>
+ <returns>DataSet chứa tất cả các bản ghi</returns>
+ -----------------------------------
+</member>
+<member name="M:DemoADO.Net.UserModel.Update(DemoADO.Net.User)">
+ <summary>
+ Thực hiện update user trong DB
+ </summary>
+ <param name="user">ĐỐi tượng user cần update</param>
+ <returns>true: Thành công; False: Thất bại</returns>
+ -----------------------------------
+</member>
+<member name="M:DemoADO.Net.UserModel.Delete(System.Int32)">
+ <summary>
+ Thực hiện xóa user trong DB
+ </summary>
+ <param name="id">ID của User cần xóa</param>
+ <returns>true: Thành công; False: Thất bại</returns>
+ -----------------------------------
 </member>
 <member name="F:DemoADO.Net.SiteMaster._MainContent">
 <summary>

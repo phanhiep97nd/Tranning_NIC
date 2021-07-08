@@ -75,4 +75,3 @@ D:\prji_nic_vbnet\70_member\HiepPV\Baitap\Traning_WebForm\Traning_Web_Form\Trani
 D:\prji_nic_vbnet\70_member\HiepPV\Baitap\Traning_WebForm\Traning_Web_Form\Traning_Web_Form\obj\Debug\Traning_Web_Form.dll
 D:\prji_nic_vbnet\70_member\HiepPV\Baitap\Traning_WebForm\Traning_Web_Form\Traning_Web_Form\obj\Debug\WebForms_Basic.xml
 D:\prji_nic_vbnet\70_member\HiepPV\Baitap\Traning_WebForm\Traning_Web_Form\Traning_Web_Form\obj\Debug\Traning_Web_Form.pdb
-D:\prji_nic_vbnet\70_member\HiepPV\Baitap\Traning_WebForm\Traning_Web_Form\Traning_Web_Form\obj\Debug\BidAndBuy.vbproj.AssemblyReference.cache

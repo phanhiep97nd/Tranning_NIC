@@ -75,4 +75,3 @@ D:\prji_nic_vbnet\70_member\HiepPV\Baitap\Traning_WebForm\Traning_Web_Form\DemoA
 D:\prji_nic_vbnet\70_member\HiepPV\Baitap\Traning_WebForm\Traning_Web_Form\DemoADO.Net\obj\Debug\DemoADO.Net.dll
 D:\prji_nic_vbnet\70_member\HiepPV\Baitap\Traning_WebForm\Traning_Web_Form\DemoADO.Net\obj\Debug\WebForms_Basic.xml
 D:\prji_nic_vbnet\70_member\HiepPV\Baitap\Traning_WebForm\Traning_Web_Form\DemoADO.Net\obj\Debug\DemoADO.Net.pdb
-D:\prji_nic_vbnet\70_member\HiepPV\Baitap\Traning_WebForm\Traning_Web_Form\DemoADO.Net\obj\Debug\DemoADO.Net.vbproj.AssemblyReference.cache
