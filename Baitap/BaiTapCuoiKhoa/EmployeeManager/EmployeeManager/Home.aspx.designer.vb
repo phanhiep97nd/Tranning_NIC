@@ -14,6 +14,15 @@ Option Explicit On
 Partial Public Class Home
 
     '''<summary>
+    '''codeAlert control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents codeAlert As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
     '''form1 control.
     '''</summary>
     '''<remarks>
@@ -86,22 +95,13 @@ Partial Public Class Home
     Protected WithEvents btnSearch As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
-    '''Label1 control.
+    '''Label4 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Label1 As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
-    '''Label2 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Label2 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents Label4 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''NewFullName control.
@@ -137,7 +137,7 @@ Partial Public Class Home
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents NewJobTitle As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents NewJobTitle As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
     '''NewAddress control.
@@ -174,13 +174,4 @@ Partial Public Class Home
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents Label3 As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
-    '''Label4 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Label4 As Global.System.Web.UI.WebControls.Label
 End Class

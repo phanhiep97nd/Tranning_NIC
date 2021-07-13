@@ -10,13 +10,18 @@
                 Response.Redirect("Login.aspx")
             End If
         Else
-
+            codeAlert.InnerHtml = ""
         End If
     End Sub
 
     Protected Sub btnLogOut_Click(sender As Object, e As EventArgs) Handles btnLogOut.Click
         Session.Remove("UserName")
         Response.Redirect("Login.aspx")
+    End Sub
+
+    Protected Sub AddNewEmployee_Click(sender As Object, e As EventArgs) Handles AddNewEmployee.Click
+        Label4.Text = "Tesst click submit!!"
+        ClientScript.RegisterStartupScript(Me.GetType(), "Popup", "$('#myModal').modal('show')", True)
     End Sub
 
     '''' ------------------------------------
@@ -68,9 +73,8 @@
         Dim row As GridViewRow = GridView1.Rows(e.RowIndex)
         Dim check = EmployeeModels.Delete(id)
         If check Then
-            Label3.Text = "Delete thành công!!"
-        Else
-            Label3.Text = "Delete thất bạn!!"
+            codeAlert.InnerHtml = Constants.HTML_SUCCESS_DELETE
+            Response.Write(Constants.SCRIPT_ALERT)
         End If
         gvbind()
     End Sub
@@ -97,21 +101,36 @@
         Dim textBoxPhone As TextBox = row.FindControl("EditPhone")
         employee.Phone = Integer.Parse(textBoxPhone.Text)
         'Dim textBoxJobTitle As TextBox = row.Cells(3).Controls(0)
-        Dim textBoxJobTitle As TextBox = row.FindControl("EditJobTitle")
-        employee.JobTitle = textBoxJobTitle.Text
+        Dim selectBoxJobTitle As DropDownList = row.FindControl("EditJobTitle")
+        employee.JobTitle = selectBoxJobTitle.SelectedValue
         'Dim textBoxAddress As TextBox = row.Cells(4).Controls(0)
         Dim textBoxAddress As TextBox = row.FindControl("EditAddress")
         employee.Address = textBoxAddress.Text
-        GridView1.EditIndex = -1
-        Dim check As Boolean = EmployeeModels.Update(employee)
-        If check Then
-            Label3.Text = "Update thành công!!"
-            'Response.Write("<script>prompt('Hello');</script>")
-            Response.Write(Constants.SCRIPT_ALERT)
+        Dim listErr As List(Of String) = Validation.validateEmployee(employee)
+        If listErr.Count = 0 Then
+            GridView1.EditIndex = -1
+            Dim check As Boolean = EmployeeModels.Update(employee)
+            If check Then
+                codeAlert.InnerHtml = Constants.HTML_SUCCESS_EDIT
+                Response.Write(Constants.SCRIPT_ALERT)
+            End If
+            gvbind()
+            GridView1.Columns(6).Visible = True
         Else
-            Label3.Text = "Update thất bạn!!"
+            codeAlert.InnerHtml = Common.GetErrorMessageEdit(listErr)
         End If
-        gvbind()
-        GridView1.Columns(6).Visible = True
     End Sub
+
+    '''' ------------------------------------
+    ''' <summary>
+    ''' Hàm được gọi click button Edit của DataGrid
+    ''' </summary>
+    ''' <param name="sender">sender</param>
+    ''' <param name="e">EventArgs</param>
+    ''' -----------------------------------
+    Protected Sub GridView1_PageIndexChanging(sender As Object, e As GridViewPageEventArgs)
+        GridView1.PageIndex = e.NewPageIndex
+        gvbind()
+    End Sub
+
 End Class

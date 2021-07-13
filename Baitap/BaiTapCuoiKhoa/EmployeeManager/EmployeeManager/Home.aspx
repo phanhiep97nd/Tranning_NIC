@@ -15,14 +15,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="" href="../Style/Home.css" />
-    <script>
-        //function writeHtmlAlert() {
-        //    document.getElementById("codeAlert").innerHTML = "<div class='alert alert - success' role='alert'><strong>Success!</strong> You have been signed in successfully!</div>";
-        //}
-    </script>
 </head>
 <body>
-    <div id="codeAlert"></div>
+    <div ID="codeAlert" runat="server"></div>
     <form id="form1" runat="server">
         <div class="container-fluid">
             <div class="table-responsive">
@@ -67,10 +62,6 @@
                             <asp:Button ID="btnSearch" runat="server" Text="Search" CssClass="btn btn-primary" />
                         </div>
                     </div>
-                    <div>
-                        <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
-                        <asp:Label ID="Label2" runat="server" Text=""></asp:Label>
-                    </div>
                 </div>
 
                 <!-- Modal -->
@@ -81,6 +72,7 @@
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h4 class="modal-title">Add New Employee</h4>
+                                <asp:Label ID="Label4" runat="server" Text=""></asp:Label>
                             </div>
                             <div class="modal-body">
                                 <div class="form-group">
@@ -97,7 +89,12 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleFormControlInput1">Job Title</label>
-                                    <asp:TextBox ID="NewJobTitle" runat="server" CssClass="form-control"></asp:TextBox>
+                                    <asp:DropDownList ID="NewJobTitle" runat="server" Width="100%" Height="45px" Style="border-color: #cccccc">
+                                        <asp:ListItem Value="">Please Select</asp:ListItem>
+                                        <asp:ListItem Value="Designer">Designer</asp:ListItem>
+                                        <asp:ListItem Value="Developer">Developer</asp:ListItem>
+                                        <asp:ListItem Value="Tester">Tester</asp:ListItem>
+                                    </asp:DropDownList>
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleFormControlInput1">Address</label>
@@ -118,7 +115,7 @@
             <h1>List Employees</h1>
             <br />
             <asp:GridView ID="GridView1" runat="server" Width="100%" ForeColor="#333333" GridLines="None" AutoGenerateColumns="False" AllowPaging="True" Style="margin-bottom: 0px" CellSpacing="5"
-                OnRowCancelingEdit="GridView1_RowCancelingEdit" OnRowDeleting="GridView1_RowDeleting" OnRowEditing="GridView1_RowEditing" OnRowUpdating="GridView1_RowUpdating" DataKeyNames="EMP_ID" CssClass="myGrv">
+                OnPageIndexChanging="GridView1_PageIndexChanging" OnRowCancelingEdit="GridView1_RowCancelingEdit" OnRowDeleting="GridView1_RowDeleting" OnRowEditing="GridView1_RowEditing" OnRowUpdating="GridView1_RowUpdating" DataKeyNames="EMP_ID" CssClass="myGrv">
                 <AlternatingRowStyle BackColor="White" />
                 <Columns>
                     <%--<asp:BoundField DataField="FULL_NAME" HeaderText="Name" />
@@ -167,7 +164,11 @@
                             </asp:Label>
                         </ItemTemplate>
                         <EditItemTemplate>
-                            <asp:TextBox ID="EditJobTitle" runat="server" CssClass="form-control" Text='<%# DataBinder.Eval(Container, "DataItem.[JOB_TITLE]") %>'></asp:TextBox>
+                            <asp:DropDownList ID="EditJobTitle" runat="server" Width="100%" Height="45px" Style="border-color: #cccccc" SelectedValue='<%# DataBinder.Eval(Container.DataItem, "JOB_TITLE") %>'>
+                                <asp:ListItem Value="Designer">Designer</asp:ListItem>
+                                <asp:ListItem Value="Developer">Developer</asp:ListItem>
+                                <asp:ListItem Value="Tester">Tester</asp:ListItem>
+                            </asp:DropDownList>
                         </EditItemTemplate>
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="Address">
@@ -220,7 +221,6 @@
         </div>
         <div>
             <asp:Label ID="Label3" runat="server" Text=""></asp:Label>
-            <asp:Label ID="Label4" runat="server" Text=""></asp:Label>
         </div>
     </form>
 </body>

@@ -37,6 +37,31 @@ EmployeeManager
  Returns the Asp log object.
  </summary>
 </member>
+<member name="T:EmployeeManager.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:EmployeeManager.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:EmployeeManager.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="F:EmployeeManager.Home._codeAlert">
+<summary>
+codeAlert control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:EmployeeManager.Home._form1">
 <summary>
 form1 control.
@@ -109,18 +134,9 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:EmployeeManager.Home._Label1">
+<member name="F:EmployeeManager.Home._Label4">
 <summary>
-Label1 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:EmployeeManager.Home._Label2">
-<summary>
-Label2 control.
+Label4 control.
 </summary>
 <remarks>
 Auto-generated field.
@@ -199,15 +215,6 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:EmployeeManager.Home._Label4">
-<summary>
-Label4 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
 <member name="M:EmployeeManager.Home.gvbind">
  <summary>
  Hàm thực hiện đẩy dữ liệu cho DataGrid
@@ -241,6 +248,14 @@ To modify move field declaration from designer file to code-behind file.
 <member name="M:EmployeeManager.Home.GridView1_RowUpdating(System.Object,System.Web.UI.WebControls.GridViewUpdateEventArgs)">
  <summary>
  Hàm được gọi click button Update của DataGrid
+ </summary>
+ <param name="sender">sender</param>
+ <param name="e">EventArgs</param>
+ -----------------------------------
+</member>
+<member name="M:EmployeeManager.Home.GridView1_PageIndexChanging(System.Object,System.Web.UI.WebControls.GridViewPageEventArgs)">
+ <summary>
+ Hàm được gọi click button Edit của DataGrid
  </summary>
  <param name="sender">sender</param>
  <param name="e">EventArgs</param>

@@ -19,4 +19,12 @@ Public Class Common
             Return sBuilder.ToString()
         End Using
     End Function
+
+    Public Shared Function GetErrorMessageEdit(input As List(Of String)) As String
+        Dim message As New StringBuilder
+        For Each item In input
+            message.Append("<div class='alert alert-danger' role='alert'><strong>Error!</strong> " & item & "</div>")
+        Next
+        Return message.ToString
+    End Function
 End Class
