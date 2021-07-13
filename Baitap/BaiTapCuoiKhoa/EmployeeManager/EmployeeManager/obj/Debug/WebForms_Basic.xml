@@ -37,6 +37,215 @@ EmployeeManager
  Returns the Asp log object.
  </summary>
 </member>
+<member name="F:EmployeeManager.Home._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:EmployeeManager.Home._UserNameLabel">
+<summary>
+UserNameLabel control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:EmployeeManager.Home._btnLogOut">
+<summary>
+btnLogOut control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:EmployeeManager.Home._btnAddEmp">
+<summary>
+btnAddEmp control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:EmployeeManager.Home._btnImportCsv">
+<summary>
+btnImportCsv control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:EmployeeManager.Home._btnExportCsv">
+<summary>
+btnExportCsv control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:EmployeeManager.Home._EmailSearch">
+<summary>
+EmailSearch control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:EmployeeManager.Home._btnSearch">
+<summary>
+btnSearch control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:EmployeeManager.Home._Label1">
+<summary>
+Label1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:EmployeeManager.Home._Label2">
+<summary>
+Label2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:EmployeeManager.Home._NewFullName">
+<summary>
+NewFullName control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:EmployeeManager.Home._NewEmail">
+<summary>
+NewEmail control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:EmployeeManager.Home._NewPhone">
+<summary>
+NewPhone control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:EmployeeManager.Home._NewJobTitle">
+<summary>
+NewJobTitle control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:EmployeeManager.Home._NewAddress">
+<summary>
+NewAddress control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:EmployeeManager.Home._AddNewEmployee">
+<summary>
+AddNewEmployee control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:EmployeeManager.Home._GridView1">
+<summary>
+GridView1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:EmployeeManager.Home._Label3">
+<summary>
+Label3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:EmployeeManager.Home._Label4">
+<summary>
+Label4 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="M:EmployeeManager.Home.gvbind">
+ <summary>
+ Hàm thực hiện đẩy dữ liệu cho DataGrid
+ </summary>
+ -----------------------------------
+</member>
+<member name="M:EmployeeManager.Home.GridView1_RowEditing(System.Object,System.Web.UI.WebControls.GridViewEditEventArgs)">
+ <summary>
+ Hàm được gọi click button Edit của DataGrid
+ </summary>
+ <param name="sender">sender</param>
+ <param name="e">EventArgs</param>
+ -----------------------------------
+</member>
+<member name="M:EmployeeManager.Home.GridView1_RowCancelingEdit(System.Object,System.Web.UI.WebControls.GridViewCancelEditEventArgs)">
+ <summary>
+ Hàm được gọi click button Cancel của DataGrid
+ </summary>
+ <param name="sender">sender</param>
+ <param name="e">EventArgs</param>
+ -----------------------------------
+</member>
+<member name="M:EmployeeManager.Home.GridView1_RowDeleting(System.Object,System.Web.UI.WebControls.GridViewDeleteEventArgs)">
+ <summary>
+ Hàm được gọi click button Delete của DataGrid
+ </summary>
+ <param name="sender">sender</param>
+ <param name="e">EventArgs</param>
+ -----------------------------------
+</member>
+<member name="M:EmployeeManager.Home.GridView1_RowUpdating(System.Object,System.Web.UI.WebControls.GridViewUpdateEventArgs)">
+ <summary>
+ Hàm được gọi click button Update của DataGrid
+ </summary>
+ <param name="sender">sender</param>
+ <param name="e">EventArgs</param>
+ -----------------------------------
+</member>
 <member name="F:EmployeeManager.Login._form1">
 <summary>
 form1 control.
@@ -81,6 +290,22 @@ Login control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+</member>
+<member name="M:EmployeeManager.EmployeeModels.Update(EmployeeManager.EmployeeEntity)">
+ <summary>
+ Thực hiện update user trong DB
+ </summary>
+ <param name="user">ĐỐi tượng user cần update</param>
+ <returns>true: Thành công; False: Thất bại</returns>
+ -----------------------------------
+</member>
+<member name="M:EmployeeManager.EmployeeModels.Delete(System.Int32)">
+ <summary>
+ Thực hiện xóa user trong DB
+ </summary>
+ <param name="id">ID của User cần xóa</param>
+ <returns>true: Thành công; False: Thất bại</returns>
+ -----------------------------------
 </member>
 </members>
 </doc>

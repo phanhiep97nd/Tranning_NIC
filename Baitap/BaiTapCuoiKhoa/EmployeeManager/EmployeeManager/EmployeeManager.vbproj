@@ -147,6 +147,7 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Home.aspx" />
     <Content Include="Image\banner_luvina_2-1920x937.jpg" />
     <Content Include="Image\logo.png" />
     <Content Include="Login.aspx" />
@@ -178,6 +179,7 @@
     <Content Include="Scripts\WebForms\WebForms.js" />
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Style\Home.css" />
     <Content Include="Style\Login.css" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -185,10 +187,18 @@
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.vb" />
     <Compile Include="App_Start\RouteConfig.vb" />
+    <Compile Include="Common\Common.vb" />
     <Compile Include="Common\Constants.vb" />
     <Compile Include="Common\Validation.vb" />
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.designer.vb">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.vb">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Login.aspx.designer.vb">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -197,7 +207,9 @@
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="Model\Employee.vb" />
+    <Compile Include="Model\EmployeeEntity.vb" />
+    <Compile Include="Model\EmployeeModels.vb" />
+    <Compile Include="Model\LoginModels.vb" />
     <Compile Include="Model\UserEntity.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">

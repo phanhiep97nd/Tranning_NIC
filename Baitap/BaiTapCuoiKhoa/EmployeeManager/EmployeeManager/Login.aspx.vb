@@ -10,15 +10,20 @@
         user.UserName = userName.Text
         user.Password = password.Text
         Dim listErr As List(Of String) = Validation.validateLogin(user)
+        user.Password = Common.EncryptPass(password.Text)
         If listErr.Count <> 0 Then
-            Dim messageErr As String
+            Dim messageErr As String = ""
             For Each item In listErr
                 messageErr += item & vbCrLf
             Next
             Message.Text = messageErr
         Else
-
+            If LoginModels.checkLogin(user) Then
+                Session("UserName") = user.UserName
+                Response.Redirect("Home.aspx")
+            Else
+                Message.Text = Constants.LOGIN_FALSE
+            End If
         End If
-
     End Sub
 End Class

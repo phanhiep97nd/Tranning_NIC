@@ -9,6 +9,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" type="" href="../Style/Login.css">
+    <style>
+        #Message{
+            color:red;
+        }
+    </style>
 </head>
 
 <body>
@@ -17,17 +22,16 @@
             <h1>Login   
                     <img src="../Image/logo.png"></h1>
             <div>
-                <asp:Label ID="Message" runat="server" Text=""></asp:Label>
+                <asp:Label ID="Message" runat="server" Text="" ></asp:Label>
             </div>
             <div class="textbox">
                 <i class="fas fa-user"></i>
-                <%--<input type="text" placeholder="Tài Khoản" name="loginName">--%>
                 <asp:TextBox ID="userName" placeholder="Tài Khoản" runat="server"></asp:TextBox>
             </div>
 
             <div class="textbox">
                 <i class="fas fa-lock"></i>
-                <asp:TextBox ID="password" placeholder="Tài Khoản" runat="server"></asp:TextBox>
+                <asp:TextBox ID="password" TextMode="Password" placeholder="Mật khẩu" runat="server"></asp:TextBox>
             </div>
 
             <asp:Button ID="Login" CssClass="btn" runat="server" Text="Đăng nhập" />

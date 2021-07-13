@@ -1,8 +1,9 @@
-﻿Public Class Employee
+﻿Public Class EmployeeEntity
     Private _empId As Integer
     Private _fullName As String
     Private _email As String
     Private _phone As Integer
+    Private _jobTitle As String
     Private _address As String
 
     Public Property EmpId As Integer
@@ -47,6 +48,15 @@
         End Get
         Set(value As String)
             _address = value
+        End Set
+    End Property
+
+    Public Property JobTitle As String
+        Get
+            Return _jobTitle
+        End Get
+        Set(value As String)
+            _jobTitle = value
         End Set
     End Property
 End Class
