@@ -15,9 +15,16 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="" href="../Style/Home.css" />
+    <script>
+        // Clear Các message lỗi trong popup vì khi close popup không posback
+        function clearMessage() {
+            document.getElementById("errMessageAdd").innerHTML = "";
+            document.getElementById("MessageErrorImport").innerHTML = "";
+        }
+    </script>
 </head>
 <body>
-    <div ID="codeAlert" runat="server"></div>
+    <div id="codeAlert" runat="server" style="color: red;"></div>
     <form id="form1" runat="server">
         <div class="container-fluid">
             <div class="table-responsive">
@@ -28,7 +35,6 @@
                                 <h4 style="color: yellow"><b>
                                     <asp:Label ID="UserNameLabel" runat="server" Text=""></asp:Label></b>!</h4>
                             </div>
-                            <%--<button type="button" style="color: red;" class="btn btn-danger">Log Out</button>--%>
                             <asp:Button ID="btnLogOut" runat="server" ForeColor="Red" Text="Log Out" OnClientClick="return confirm('Are you sure?');" CssClass="btn btn-danger" />
                         </div>
                         <hr>
@@ -37,17 +43,10 @@
                                 <h2>Employees <b>Management</b></h2>
                             </div>
                             <div class="col-xs-7">
-                                <%--<a href="#" class="btn btn-primary" data-toggle="modal"
-                                    data-target="#myModal"><i class="material-icons">&#xE147;</i> <span>Add New
-                                    Employee</span></a>--%>
                                 <asp:LinkButton ID="btnAddEmp" runat="server" CssClass="btn btn-primary" data-toggle="modal" data-target="#myModal"><i class="material-icons">&#xE147;</i> <span>Add New
                                     Employee</span></asp:LinkButton>
-                                <%--<a href="#" class="btn btn-primary"><i class="material-icons">&#xe9a3;</i> <span>Import to
-                                    CSV</span></a>--%>
-                                <asp:LinkButton ID="btnImportCsv" runat="server" CssClass="btn btn-primary"><i class="material-icons">&#xe9a3;</i> <span>Import to
+                                <asp:LinkButton ID="btnImportCsv" runat="server" CssClass="btn btn-primary" data-toggle="modal" data-target="#modalUpFile"><i class="material-icons">&#xe9a3;</i> <span>Import to
                                     CSV</span></asp:LinkButton>
-                                <%--<a href="#" class="btn btn-primary"><i class="material-icons">&#xE24D;</i> <span>Export to
-                                    CSV</span></a>--%>
                                 <asp:LinkButton ID="btnExportCsv" runat="server" CssClass="btn btn-primary"><i class="material-icons">&#xE24D;</i> <span>Export to
                                     CSV</span></asp:LinkButton>
                             </div>
@@ -55,10 +54,7 @@
                     </div>
                     <div class="row">
                         <div class="form-inline d-flex justify-content-center md-form form-sm active-cyan-2 mt-2">
-                            <%--<input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search Employee By Email"
-                                aria-label="Search">--%>
                             <asp:TextBox ID="EmailSearch" runat="server" CssClass="form-control form-control-sm mr-3 w-75" placeholder="Search Employee By Email"></asp:TextBox>
-                            <%--<button type="button" class="btn btn-primary">Search</button>--%>
                             <asp:Button ID="btnSearch" runat="server" Text="Search" CssClass="btn btn-primary" />
                         </div>
                     </div>
@@ -72,7 +68,7 @@
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h4 class="modal-title">Add New Employee</h4>
-                                <asp:Label ID="Label4" runat="server" Text=""></asp:Label>
+                                <div runat="server" id="errMessageAdd" style="color: red;"></div>
                             </div>
                             <div class="modal-body">
                                 <div class="form-group">
@@ -81,11 +77,11 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleFormControlInput1">Email address</label>
-                                    <asp:TextBox ID="NewEmail" type="email" runat="server" CssClass="form-control"></asp:TextBox>
+                                    <asp:TextBox ID="NewEmail" runat="server" CssClass="form-control"></asp:TextBox>
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleFormControlInput1">Phone</label>
-                                    <asp:TextBox ID="NewPhone" type="number" runat="server" CssClass="form-control"></asp:TextBox>
+                                    <asp:TextBox ID="NewPhone" runat="server" CssClass="form-control"></asp:TextBox>
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleFormControlInput1">Job Title</label>
@@ -102,11 +98,30 @@
                                 </div>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <asp:Button type="button" ID="closeModalAdd" runat="server" class="btn btn-secondary" data-dismiss="modal" Text="Close" OnClientClick="clearMessage()"/>
                                 <asp:Button ID="AddNewEmployee" runat="server" Text="Submit" CssClass="btn btn-primary" />
                             </div>
                         </div>
 
+                    </div>
+                </div>
+                <!-- Modal Upload file -->
+                <div class="modal fade" id="modalUpFile" role="dialog">
+                    <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Import CSV</h4>
+                                <div runat="server" id="MessageErrorImport" style="color: red;"></div>
+                            </div>
+                            <div class="modal-body">
+                                <asp:FileUpload Width="300" ID="FileUpload" CssClass="form-control" runat="server" />
+                            </div>
+                            <div class="modal-footer">
+                                <asp:Button type="button" ID="closeModalImport" runat="server" class="btn btn-secondary" data-dismiss="modal" Text="Close" OnClientClick="clearMessage()"/>
+                                <asp:Button ID="Import" runat="server" Text="Import" CssClass="btn btn-primary" />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -114,17 +129,10 @@
         <div style="padding: 15px">
             <h1>List Employees</h1>
             <br />
-            <asp:GridView ID="GridView1" runat="server" Width="100%" ForeColor="#333333" GridLines="None" AutoGenerateColumns="False" AllowPaging="True" Style="margin-bottom: 0px" CellSpacing="5"
+            <asp:GridView ID="GridView1" runat="server" RowStyle-CssClass="GvRowStyle" Width="100%" ForeColor="#333333" GridLines="None" AutoGenerateColumns="False" AllowPaging="True" Style="margin-bottom: 0px" CellSpacing="5"
                 OnPageIndexChanging="GridView1_PageIndexChanging" OnRowCancelingEdit="GridView1_RowCancelingEdit" OnRowDeleting="GridView1_RowDeleting" OnRowEditing="GridView1_RowEditing" OnRowUpdating="GridView1_RowUpdating" DataKeyNames="EMP_ID" CssClass="myGrv">
                 <AlternatingRowStyle BackColor="White" />
                 <Columns>
-                    <%--<asp:BoundField DataField="FULL_NAME" HeaderText="Name" />
-                    <asp:BoundField DataField="EMAIL" HeaderText="Email" />
-                    <asp:BoundField DataField="PHONE" HeaderText="Phone Number" />
-                    <asp:BoundField DataField="JOB_TITLE" HeaderText="Job Title" />
-                    <asp:BoundField DataField="ADDRESS" HeaderText="Address" />
-                    <asp:CommandField ShowEditButton="True" ButtonType="Button" />
-                    <asp:CommandField ShowDeleteButton="True" ButtonType="Button"/>--%>
                     <asp:TemplateField HeaderText="Full Name">
                         <ItemTemplate>
                             <asp:Label ID="fullName" runat="server"
@@ -154,7 +162,7 @@
                         </ItemTemplate>
                         <EditItemTemplate>
                             <asp:TextBox ID="EditPhone" runat="server" CssClass="form-control"
-                                Text='<%# DataBinder.Eval(Container, "DataItem.[PHONE]") %>' type="number"></asp:TextBox>
+                                Text='<%# DataBinder.Eval(Container, "DataItem.[PHONE]") %>'></asp:TextBox>
                         </EditItemTemplate>
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="Job Title">
@@ -206,10 +214,10 @@
                         </ItemTemplate>
                     </asp:TemplateField>
                 </Columns>
-                <EditRowStyle HorizontalAlign="Left" BackColor="#ffcccc" />
+                <EditRowStyle HorizontalAlign="Left" BackColor="#ddddbb" />
                 <FooterStyle BackColor="#299be4" ForeColor="White" Font-Bold="True" />
                 <HeaderStyle BackColor="#299be4" Font-Size="Large" Height="50px" Font-Bold="True" ForeColor="White" HorizontalAlign="Left" />
-                <PagerStyle BackColor="#299be4" ForeColor="White" HorizontalAlign="Center" />
+                <PagerStyle BackColor="#299be4" ForeColor="White" HorizontalAlign="Center" CssClass="PagingCss" />
                 <RowStyle BackColor="#EFF3FB" />
                 <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />
                 <SortedAscendingCellStyle BackColor="#F5F7FB" />

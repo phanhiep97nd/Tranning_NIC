@@ -75,7 +75,6 @@ D:\prji_nic_vbnet\70_member\HiepPV\Baitap\BaiTapCuoiKhoa\EmployeeManager\Employe
 D:\prji_nic_vbnet\70_member\HiepPV\Baitap\BaiTapCuoiKhoa\EmployeeManager\EmployeeManager\obj\Debug\EmployeeManager.dll
 D:\prji_nic_vbnet\70_member\HiepPV\Baitap\BaiTapCuoiKhoa\EmployeeManager\EmployeeManager\obj\Debug\WebForms_Basic.xml
 D:\prji_nic_vbnet\70_member\HiepPV\Baitap\BaiTapCuoiKhoa\EmployeeManager\EmployeeManager\obj\Debug\EmployeeManager.pdb
-D:\prji_nic_vbnet\70_member\HiepPV\Baitap\BaiTapCuoiKhoa\EmployeeManager\EmployeeManager\obj\Debug\EmployeeManager.vbproj.AssemblyReference.cache
 D:\Desktop\Tranning_NIC\Baitap\BaiTapCuoiKhoa\EmployeeManager\EmployeeManager\bin\EmployeeManager.dll.config
 D:\Desktop\Tranning_NIC\Baitap\BaiTapCuoiKhoa\EmployeeManager\EmployeeManager\bin\EmployeeManager.dll
 D:\Desktop\Tranning_NIC\Baitap\BaiTapCuoiKhoa\EmployeeManager\EmployeeManager\bin\EmployeeManager.pdb

@@ -1,8 +1,25 @@
-﻿Public Class EmployeeEntity
+﻿''-----------------------------------------------------------------------
+' <copyright file="EmployeeEntity.vb" company="Luvina">
+' Copyright (c) Luvina Corporation. All rights reserved.
+' </copyright>
+'---------------------------------------------------------------------
+
+''' ------------------------------------
+''' Project  : EmployeeManager
+''' Class  : EmployeeEntity
+''' ------------------------------------ 
+''' <summary>
+''' Class chứa đối tượng Employee
+''' </summary>
+''' <history>
+'''  [HiepPV] 10/07/2021 Created
+''' </history>
+''' ------------------------------------
+Public Class EmployeeEntity
     Private _empId As Integer
     Private _fullName As String
     Private _email As String
-    Private _phone As Integer
+    Private _phone As String
     Private _jobTitle As String
     Private _address As String
 
@@ -33,11 +50,11 @@
         End Set
     End Property
 
-    Public Property Phone As Integer
+    Public Property Phone As String
         Get
             Return _phone
         End Get
-        Set(value As Integer)
+        Set(value As String)
             _phone = value
         End Set
     End Property

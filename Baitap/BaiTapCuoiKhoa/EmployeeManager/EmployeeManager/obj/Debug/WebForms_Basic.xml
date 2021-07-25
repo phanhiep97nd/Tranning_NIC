@@ -53,6 +53,143 @@ EmployeeManager
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="T:EmployeeManager.Common">
+ ------------------------------------
+ Project  : EmployeeManager
+ Class  : Common
+ ------------------------------------ 
+ <summary>
+ Class chứa các hàm dùng chung
+ </summary>
+ <history>
+  [HiepPV] 10/07/2021 Created
+ </history>
+ ------------------------------------
+</member>
+<member name="M:EmployeeManager.Common.EncryptPass(System.String)">
+ ------------------------------------
+ <summary>
+ Hàm mã hóa MD5
+ </summary>
+ <param name="input">String cần mã hóa</param>
+ <returns>Chuỗi đã được mã hóa</returns>
+ -----------------------------------
+</member>
+<member name="M:EmployeeManager.Common.GetErrorMessageValidate(System.Collections.Generic.List{System.String})">
+ ------------------------------------
+ <summary>
+ Lấy về chuỗi HTML chứa message validate để hiển thị message validate
+ </summary>
+ <param name="input">List message validate</param>
+ <returns>Đoạn mã HTML chứa các thông báo để hiển thị lỗi</returns>
+ -----------------------------------
+</member>
+<member name="M:EmployeeManager.Common.GetErrorMessageImportCsv(System.Collections.Generic.List{System.String})">
+ ------------------------------------
+ <summary>
+ Lấy về chuỗi HTML chứa message validate khi import csv để hiển thị message
+ </summary>
+ <param name="input">List message validate</param>
+ <returns>Đoạn mã HTML chứa các thông báo để hiển thị lỗi</returns>
+ -----------------------------------
+</member>
+<member name="T:EmployeeManager.Constants">
+ ------------------------------------
+ Project  : EmployeeManager
+ Class  : Constants
+ ------------------------------------ 
+ <summary>
+ Class chứa các biến số Constant
+ </summary>
+ <history>
+  [HiepPV] 10/07/2021 Created
+ </history>
+ ------------------------------------
+</member>
+<member name="T:EmployeeManager.Validation">
+ ------------------------------------
+ Project  : EmployeeManager
+ Class  : Validation
+ ------------------------------------ 
+ <summary>
+ Class chứa các hàm dùng để validate
+ </summary>
+ <history>
+  [HiepPV] 10/07/2021 Created
+ </history>
+ ------------------------------------
+</member>
+<member name="M:EmployeeManager.Validation.validateLogin(EmployeeManager.UserEntity)">
+ ------------------------------------
+ <summary>
+ Hàm thực hiện logic validate userName và passwork
+ </summary>
+ <param name="user">user cần kiểm tra</param>
+ <returns>List Message validate</returns>
+ -----------------------------------
+</member>
+<member name="M:EmployeeManager.Validation.validateEmployee(EmployeeManager.EmployeeEntity)">
+ ------------------------------------
+ <summary>
+ Hàm thực hiện logic validate giá trị các thuộc tính của đối tượng Employee
+ </summary>
+ <param name="emp">Employee cần kiểm tra</param>
+ <returns>List Message validate</returns>
+ -----------------------------------
+</member>
+<member name="T:EmployeeManager.ErrorPage">
+ ------------------------------------
+ Project  : EmployeeManager
+ Class  : IDBLayer
+ ------------------------------------ 
+ <summary>
+ Chưa code logic cho màn hình Error
+ </summary>
+ <history>
+  [HiepPV] 10/07/2021 Created
+ </history>
+ ------------------------------------
+</member>
+<member name="F:EmployeeManager.ErrorPage._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:EmployeeManager.ErrorPage._MessageErr">
+<summary>
+MessageErr control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="M:EmployeeManager.ErrorPage.Page_Load(System.Object,System.EventArgs)">
+ ------------------------------------
+ <summary>
+ Hàm thực hiện logic khi load trang
+ </summary>
+ <param name="sender">Sender</param>
+ <param name="e">Event</param>
+ -----------------------------------
+</member>
+<member name="T:EmployeeManager.Home">
+ ------------------------------------
+ Project  : EmployeeManager
+ Class  : Home
+ ------------------------------------ 
+ <summary>
+ Các logic tại màn hình Home
+ </summary>
+ <history>
+  [HiepPV] 10/07/2021 Created
+ </history>
+ ------------------------------------
+</member>
 <member name="F:EmployeeManager.Home._codeAlert">
 <summary>
 codeAlert control.
@@ -134,9 +271,9 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:EmployeeManager.Home._Label4">
+<member name="F:EmployeeManager.Home._errMessageAdd">
 <summary>
-Label4 control.
+errMessageAdd control.
 </summary>
 <remarks>
 Auto-generated field.
@@ -188,9 +325,54 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:EmployeeManager.Home._closeModalAdd">
+<summary>
+closeModalAdd control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:EmployeeManager.Home._AddNewEmployee">
 <summary>
 AddNewEmployee control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:EmployeeManager.Home._MessageErrorImport">
+<summary>
+MessageErrorImport control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:EmployeeManager.Home._FileUpload">
+<summary>
+FileUpload control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:EmployeeManager.Home._closeModalImport">
+<summary>
+closeModalImport control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:EmployeeManager.Home._Import">
+<summary>
+Import control.
 </summary>
 <remarks>
 Auto-generated field.
@@ -215,15 +397,41 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="M:EmployeeManager.Home.Page_Load(System.Object,System.EventArgs)">
+ ------------------------------------
+ <summary>
+ Hàm thực hiện logic khi load trang
+ </summary>
+ <param name="sender">Sender</param>
+ <param name="e">Event</param>
+ -----------------------------------
+</member>
+<member name="M:EmployeeManager.Home.Page_PreRender(System.Object,System.EventArgs)">
+ ------------------------------------
+ <summary>
+ Hàm thực hiện logic trước khi page được Render
+ </summary>
+ <param name="sender">Sender</param>
+ <param name="e">Event</param>
+ -----------------------------------
+</member>
 <member name="M:EmployeeManager.Home.gvbind">
  <summary>
  Hàm thực hiện đẩy dữ liệu cho DataGrid
  </summary>
  -----------------------------------
 </member>
+<member name="M:EmployeeManager.Home.gvbind(System.String)">
+ ------------------------------------
+ <summary>
+ Hàm thực hiện đẩy dữ liệu cho Gridview
+ </summary>
+ <param name="emailSearch">Chuỗi email dùng để search</param>
+ -----------------------------------
+</member>
 <member name="M:EmployeeManager.Home.GridView1_RowEditing(System.Object,System.Web.UI.WebControls.GridViewEditEventArgs)">
  <summary>
- Hàm được gọi click button Edit của DataGrid
+ Hàm xử lí logic khi click button Edit của DataGrid
  </summary>
  <param name="sender">sender</param>
  <param name="e">EventArgs</param>
@@ -231,15 +439,7 @@ To modify move field declaration from designer file to code-behind file.
 </member>
 <member name="M:EmployeeManager.Home.GridView1_RowCancelingEdit(System.Object,System.Web.UI.WebControls.GridViewCancelEditEventArgs)">
  <summary>
- Hàm được gọi click button Cancel của DataGrid
- </summary>
- <param name="sender">sender</param>
- <param name="e">EventArgs</param>
- -----------------------------------
-</member>
-<member name="M:EmployeeManager.Home.GridView1_RowDeleting(System.Object,System.Web.UI.WebControls.GridViewDeleteEventArgs)">
- <summary>
- Hàm được gọi click button Delete của DataGrid
+ Hàm xử lí logic khi click button Cancel của DataGrid
  </summary>
  <param name="sender">sender</param>
  <param name="e">EventArgs</param>
@@ -247,7 +447,15 @@ To modify move field declaration from designer file to code-behind file.
 </member>
 <member name="M:EmployeeManager.Home.GridView1_RowUpdating(System.Object,System.Web.UI.WebControls.GridViewUpdateEventArgs)">
  <summary>
- Hàm được gọi click button Update của DataGrid
+ Hàm thực hiện logic khi click button Update của DataGrid
+ </summary>
+ <param name="sender">sender</param>
+ <param name="e">EventArgs</param>
+ -----------------------------------
+</member>
+<member name="M:EmployeeManager.Home.GridView1_RowDeleting(System.Object,System.Web.UI.WebControls.GridViewDeleteEventArgs)">
+ <summary>
+ Hàm thực hiện logic khi click button Delete của DataGrid
  </summary>
  <param name="sender">sender</param>
  <param name="e">EventArgs</param>
@@ -255,11 +463,76 @@ To modify move field declaration from designer file to code-behind file.
 </member>
 <member name="M:EmployeeManager.Home.GridView1_PageIndexChanging(System.Object,System.Web.UI.WebControls.GridViewPageEventArgs)">
  <summary>
- Hàm được gọi click button Edit của DataGrid
+ Hàm xử lí logic khi click paging của gridview
  </summary>
  <param name="sender">sender</param>
  <param name="e">EventArgs</param>
  -----------------------------------
+</member>
+<member name="M:EmployeeManager.Home.ClearControls">
+ ------------------------------------
+ <summary>
+ Hàm thực hiện clear giá trị các hạng mục
+ </summary>
+ -----------------------------------
+</member>
+<member name="M:EmployeeManager.Home.btnSearch_Click(System.Object,System.EventArgs)">
+ ------------------------------------
+ <summary>
+ Hàm thực hiện logic khi click button Search
+ </summary>
+ <param name="sender">sender</param>
+ <param name="e">EventArgs</param>
+ -----------------------------------
+</member>
+<member name="M:EmployeeManager.Home.AddNewEmployee_Click(System.Object,System.EventArgs)">
+ ------------------------------------
+ <summary>
+ Hàm thực hiện logic khi click button Submit trong popup Add New Employee
+ </summary>
+ <param name="sender">Sender</param>
+ <param name="e">Event</param>
+ -----------------------------------
+</member>
+<member name="M:EmployeeManager.Home.btnExportCsv_Click(System.Object,System.EventArgs)">
+ ------------------------------------
+ <summary>
+ Hàm thực hiện logic khi click button Export Csv
+ </summary>
+ <param name="sender">sender</param>
+ <param name="e">EventArgs</param>
+ -----------------------------------
+</member>
+<member name="M:EmployeeManager.Home.Import_Click(System.Object,System.EventArgs)">
+ ------------------------------------
+ <summary>
+ Hàm thực hiện logic khi click button Import trong popup Import CSV
+ </summary>
+ <param name="sender">sender</param>
+ <param name="e">EventArgs</param>
+ -----------------------------------
+</member>
+<member name="M:EmployeeManager.Home.btnLogOut_Click(System.Object,System.EventArgs)">
+ ------------------------------------
+ <summary>
+ Hàm thực hiện logic khi click button Logout
+ </summary>
+ <param name="sender">Sender</param>
+ <param name="e">Event</param>
+ -----------------------------------
+</member>
+<member name="T:EmployeeManager.Login">
+ ------------------------------------
+ Project  : EmployeeManager
+ Class  : Login
+ ------------------------------------ 
+ <summary>
+ Chứa các logic của chức năng Login
+ </summary>
+ <history>
+  [HiepPV] 10/07/2021 Created
+ </history>
+ ------------------------------------
 </member>
 <member name="F:EmployeeManager.Login._form1">
 <summary>
@@ -306,21 +579,146 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="M:EmployeeManager.Login.Login_Click(System.Object,System.EventArgs)">
+ ------------------------------------
+ <summary>
+ Hàm thực hiện các logic khi click button Login
+ </summary>
+ <param name="sender">Sender</param>
+ <param name="e">Event</param>
+ -----------------------------------
+</member>
+<member name="T:EmployeeManager.EmployeeEntity">
+ ------------------------------------
+ Project  : EmployeeManager
+ Class  : EmployeeEntity
+ ------------------------------------ 
+ <summary>
+ Class chứa đối tượng Employee
+ </summary>
+ <history>
+  [HiepPV] 10/07/2021 Created
+ </history>
+ ------------------------------------
+</member>
+<member name="T:EmployeeManager.EmployeeModels">
+ ------------------------------------
+ Project  : EmployeeManager
+ Class  : EmployeeModels
+ ------------------------------------ 
+ <summary>
+ Chứa các hàm tháo tác với DB liên quan đến đối tượng Employee
+ </summary>
+ <history>
+  [HiepPV] 10/07/2021 Created
+ </history>
+ ------------------------------------
+</member>
+<member name="M:EmployeeManager.EmployeeModels.LoadData">
+ ------------------------------------
+ <summary>
+ Thực hiện select Db lấy data để hiển thị gridview
+ </summary>
+ <returns>Dataset chưa giá trị vừa select từ DB</returns>
+ -----------------------------------
+</member>
+<member name="M:EmployeeManager.EmployeeModels.LoadData(System.Object)">
+ ------------------------------------
+ <summary>
+ Thực hiện select Db search theo email lấy data để hiển thị gridview
+ </summary>
+ <param name="emailSearch">email dùng để search</param>
+ <returns>Dataset chưa giá trị vừa select từ DB</returns>
+ -----------------------------------
+</member>
 <member name="M:EmployeeManager.EmployeeModels.Update(EmployeeManager.EmployeeEntity)">
  <summary>
  Thực hiện update user trong DB
  </summary>
- <param name="user">ĐỐi tượng user cần update</param>
+ <param name="employee">ĐỐi tượng user cần update</param>
  <returns>true: Thành công; False: Thất bại</returns>
  -----------------------------------
 </member>
 <member name="M:EmployeeManager.EmployeeModels.Delete(System.Int32)">
  <summary>
- Thực hiện xóa user trong DB
+ Thực hiện xóa employee trong DB
  </summary>
- <param name="id">ID của User cần xóa</param>
+ <param name="id">ID của employee cần xóa</param>
  <returns>true: Thành công; False: Thất bại</returns>
  -----------------------------------
+</member>
+<member name="M:EmployeeManager.EmployeeModels.AddEmployee(EmployeeManager.EmployeeEntity)">
+ <summary>
+ Thực hiện thêm mới employee vào DB
+ </summary>
+ <param name="employee">employee cần thêm</param>
+ <returns>true: Thành công; False: Thất bại</returns>
+ -----------------------------------
+</member>
+<member name="M:EmployeeManager.EmployeeModels.AddEmployee(EmployeeManager.EmployeeEntity,System.Data.SqlClient.SqlConnection,System.Data.SqlClient.SqlTransaction)">
+ <summary>
+ Thực hiện thêm mới employee vào DB có quản lí Transaction
+ </summary>
+ <param name="employee">employee cần thêm</param>
+ <param name="conn">Đối tượng SqlConnection</param>
+ <param name="sqlTransaction">Đối tượng SqlTransaction</param>
+ <returns>true: Thành công; False: Thất bại</returns>
+ -----------------------------------
+</member>
+<member name="M:EmployeeManager.EmployeeModels.checkExistEmail(System.Int32,System.String)">
+ ------------------------------------
+ <summary>
+ Kiểm tra email đã tồn tại trong DB chưa
+ </summary>
+ <param name="empId">Id của employee cần kiểm tra</param>
+ <param name="email">email cần kiểm tra</param>
+ <returns>true: Đã tồn tại; False: Chưa tồn tại</returns>
+ -----------------------------------
+</member>
+<member name="M:EmployeeManager.EmployeeModels.checkExistPhone(System.Int32,System.String)">
+ ------------------------------------
+ <summary>
+ Kiểm tra phone đã tồn tại trong DB chưa 
+ </summary>
+ <param name="empId">Id của employee cần kiểm tra</param>
+ <param name="phone">phone cần kiểm tra</param>
+ <returns>true: Đã tồn tại; False: Chưa tồn tại</returns>
+ -----------------------------------
+</member>
+<member name="T:EmployeeManager.LoginModels">
+ ------------------------------------
+ Project  : EmployeeManager
+ Class  : LoginModels
+ ------------------------------------ 
+ <summary>
+ Chứa các hàm thao tác với DB cho chức năng login
+ </summary>
+ <history>
+  [HiepPV] 10/07/2021 Created
+ </history>
+ ------------------------------------
+</member>
+<member name="M:EmployeeManager.LoginModels.checkLogin(EmployeeManager.UserEntity)">
+ ------------------------------------
+ <summary>
+ Hàm thực hiện thao tác với DB để kiểm tra userName và password có trùng khớp
+ </summary>
+ <param name="user">Đối tượng user cần kiểm tra</param>
+ <returns>True: Thông tin login trùng khớp; Otherwise: Thông tin login không trùng khớp</returns>
+ -----------------------------------
+</member>
+<member name="T:EmployeeManager.UserEntity">
+ ------------------------------------
+ Project  : EmployeeManager
+ Class  : UserEntity
+ ------------------------------------ 
+ <summary>
+ Class chứa đối tượng User
+ </summary>
+ <history>
+  [HiepPV] 10/07/2021 Created
+ </history>
+ ------------------------------------
 </member>
 </members>
 </doc>

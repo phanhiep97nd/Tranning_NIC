@@ -1,4 +1,21 @@
-﻿Public Class UserEntity
+﻿''-----------------------------------------------------------------------
+' <copyright file="UserEntity.vb" company="Luvina">
+' Copyright (c) Luvina Corporation. All rights reserved.
+' </copyright>
+'---------------------------------------------------------------------
+
+''' ------------------------------------
+''' Project  : EmployeeManager
+''' Class  : UserEntity
+''' ------------------------------------ 
+''' <summary>
+''' Class chứa đối tượng User
+''' </summary>
+''' <history>
+'''  [HiepPV] 10/07/2021 Created
+''' </history>
+''' ------------------------------------
+Public Class UserEntity
     Private _userId As Integer
     Private _userName As String
     Private _password As String

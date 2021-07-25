@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quản lý nhân viên</title> 
+	<meta charset="UTF-8">
+	<script src="jquery-3.6.0.min.js"></script>
+	<script src="script.js"></script>
+	<style>
+	
+		li {
+			width:150px;
+		}
+		li > span {
+			float:right;
+			color:gray
+		}
+	</style>
+</head>
+<body>
+	<h1 style="width:100%; text-align:center">Công ty Cổ phần LUVINA</h1>
+	<h3 style="width:100%; text-align:center">Khảo sát kỹ năng nhân viên</h3>
+	<table style="width:100%; text-align:center">
+		<tr>
+			<td style="width:50%">
+				<span style="font-weight: bold;">Người thực hiện: </span>
+				<span id="AuthorText">Bùi Thanh Nga</span>
+				<input type="Text" id="AuthorInput"/>
+			</td>
+			<td style="width:50%">
+				<span style="font-weight: bold;">Ngày khảo sát: </span>
+				<span id="DateText">2021-06-05</span>
+				<input type="Date" id="DateInput"/>
+			</td>
+		</tr>
+	</table>
+	<br/>
+	<br/>
+	<table id="GridTable" style="width:100%; border-collapse:collapse" border=1>
+		<tr style="text-decoration:">
+			<td style="width:60px">ID</td>
+			<td style="width:200px">Họ tên nhân viên</td>
+			<td style="width:200px">Giới tính</td>
+			<td style="width:100px">Phòng ban</td>
+			<td style="width:150px">Vị trí công việc</td>
+			<td style="width:220px">Năm kinh nghiệm</td>
+			<td style="width:280px">Các kỹ năng</td>
+			<td style="width:580px">Ghi chú</td>
+			<td></td>
+		</tr>
+		<tr class="rowDetail">
+			<td><p id="Id_1">1</p></td>
+			<td style="width:200px">
+				<p id="NameText_1">Bùi Thanh Nga</p>
+				<input type="Text" id="NameInput_1"/>
+			</td>
+			<td>
+				Nam<input type="radio" id="SexM_1" name="Sex_1" value="Nam"/> 
+				Nữ<input type="radio" id="SexF_1" name="Sex_1" value="Nữ" checked="checked"/>
+			</td>
+			<td>
+				<select id="DevSelect_1">
+					<option>DEV1</option>
+					<option>DEV2</option>
+					<option>DEV3</option>
+					<option>DEV5</option>
+					<option>DEV6</option>
+					<option>DEV7</option>
+					<option>DEV8</option>
+				</select>
+			</td>
+			<td>
+				<select id="PosSelect_1">
+					<option>PM</option>
+					<option>TechLead</option>
+					<option>DEV</option>
+					<option>Test</option>
+				</select>
+			</td>
+			<td>
+				<input type="number" id="Exp_1" value="3" style="width:30px">
+			</td>
+			<td>
+				<span style="width:100px;height:10px"></span>
+				<ul id="Skills_1">
+					<li>C# <span>X</span></li>
+					<li>SQL_SERVER <span>X</span></li>
+				</ul>
+				<span style="color:white">a</span>
+				<input type="Text" id="NewSkill_1"></input><input type="button" id="AddSkill_1" name="AddSkill" value="Add"></input>
+			</td>
+			<td>
+				<p id="NoteText_1"></p>
+				<textarea id="NoteInput_1" style="width:550px;height:50px"></textarea>
+			</td>
+			<td>
+				<input type="button" id="Edit_1" name="Edit" value="Edit"></input>
+				<input type="button" id="Submit_1" name="Submit" value="Submit"></input>
+				<input type="button" id="Cancel_1" name="Cancel" value="Cancel"></input>
+				<input type="button" id="Delete_1" name="Delete" value="Delete"></input>
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>
+				<input type="Text" id="NameInput"/>
+			</td>
+			<td>
+				Nam<input type="radio" id="SexM" name="Sex" value="Nam" checked="checked"/> 
+				Nữ<input type="radio" id="SexF" name="Sex" value="Nữ"/>
+			</td>
+			<td>
+				<select id="DevSelect">
+					<option>DEV1</option>
+					<option>DEV2</option>
+					<option>DEV3</option>
+					<option>DEV5</option>
+					<option>DEV6</option>
+					<option>DEV7</option>
+					<option>DEV8</option>
+				</select>
+			</td>
+			<td>
+				<select id="PosSelect">
+					<option>PM</option>
+					<option>TechLead</option>
+					<option>DEV</option>
+					<option>Test</option>
+				</select>
+			</td>
+			<td>
+				<input type="number" id="Exp" value=0 style="width:30px">
+			</td>
+			<td>
+				<span style="width:100px;height:10px"></span>
+				<ul id="Skills">
+					<li>C# <span>X</span></li>
+					<li>SQL_SERVER <span>X</span></li>
+				</ul>
+				<span style="color:white">a</span>
+				<input type="Text" id="NewSkill"></input><input type="button" id="AddSkill" name="AddSkill" value="Add"></input>
+			</td>
+			<td>
+				<textarea id="NoteInput" style="width:550px;height:50px"></textarea>
+			</td>
+			<td>
+				<input type="button" id="Insert" name="Insert" value="Insert"></input>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

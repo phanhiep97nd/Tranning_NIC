@@ -95,13 +95,13 @@ Partial Public Class Home
     Protected WithEvents btnSearch As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
-    '''Label4 control.
+    '''errMessageAdd control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Label4 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents errMessageAdd As Global.System.Web.UI.HtmlControls.HtmlGenericControl
 
     '''<summary>
     '''NewFullName control.
@@ -149,6 +149,15 @@ Partial Public Class Home
     Protected WithEvents NewAddress As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
+    '''closeModalAdd control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents closeModalAdd As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
     '''AddNewEmployee control.
     '''</summary>
     '''<remarks>
@@ -156,6 +165,42 @@ Partial Public Class Home
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents AddNewEmployee As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''MessageErrorImport control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MessageErrorImport As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''FileUpload control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents FileUpload As Global.System.Web.UI.WebControls.FileUpload
+
+    '''<summary>
+    '''closeModalImport control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents closeModalImport As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''Import control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Import As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
     '''GridView1 control.
